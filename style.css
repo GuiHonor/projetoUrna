@@ -1,0 +1,209 @@
+    @keyframes pisca {
+        0% {opacity: 0.1;}
+        50% {opacity: 1;}
+        100%{opacity: 0.1;}
+        
+    }
+
+*{
+    margin:0;
+    padding:0;
+    border: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.urna{
+    
+    background-color: #dbd5c9;
+    padding:30px;
+    display: flex;
+    
+    border-radius: 2px;
+    border-right: solid 5px #999;
+    border-bottom: solid 5px #999;
+    border-top: solid 4px rgb(241, 240, 240);
+    border-left: solid 4px rgb(241, 240, 240);
+}
+
+
+.tela{
+    width: 500px;
+    height: 320px;
+    background: linear-gradient(to right, #E8E8E8, #C1C1C1);
+    margin-right: 30px; 
+    border-top: solid 5px #999;
+    border-left: solid 5px #999;
+    border-bottom: solid 4px rgb(241, 240, 240);
+    border-right: solid 4px rgb(241, 240, 240);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.teclado{
+    background-color: #403A3A;
+    border: solid 2px #101010;
+    border-radius: 3px;
+}
+
+.teclado-linha{
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.teclado-botao{
+    margin: 10px;
+    width: 70px;
+    height: 40px;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    text-align: left;
+    box-shadow: -3px 4px 5px 1px black;
+    border-radius: 5px;
+    font-family: Arial;
+    padding: 3px;
+    font-size:25px;
+    display: flex;
+    align-items: left;
+    cursor: pointer;
+}
+
+.teclado-botao:active{
+    box-shadow:none;
+}
+
+.btn-branco{
+    background-color: white;
+}
+
+.btn-corrige{
+    background-color: rgb(250, 132, 63);
+}
+
+.btn-confirma{
+    background-color: rgb(92, 231, 92);
+    width: 90px;
+    height: 50px;
+}
+
+.btn-text{
+    color: black;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold ;
+
+}
+
+
+.d1{
+    flex: 1;
+    display: flex;
+}
+
+.d1-left{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.d1-left-txtinit{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.d1-left-cargo{
+    height: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d1-left-num{
+    height: 50px;
+
+}
+
+.quadrados{
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    margin: 2px;
+
+}
+
+.pisca{
+    animation-name: pisca;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    
+}
+
+.d1-left-candidatura{
+    flex: 1;
+    line-height: 30px;
+}
+
+.d1-right{
+    width: 90px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+
+.d1-image{
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+.d1-image img{
+    width: 100%;
+    height: 115px;
+
+}
+
+.d1-image.small{
+    width: 80%;
+    font-size: 12px;
+}
+.d2{
+    height: 50px;
+    font-size: 14px;
+    border-top: 2px solid #000;
+    padding-left:6px;
+    font-family: arial;
+    
+}
+
+.avisogrande{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.fim{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    
+}
